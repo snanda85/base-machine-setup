@@ -20,7 +20,8 @@
     "profiles": {
         "defaults": {
             // Put settings here that you want to apply to all profiles.
-            "cursorShape": "vintage"
+            "cursorShape": "vintage",
+            "fontSize": 10
         },
         "list": [
             {
