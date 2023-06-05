@@ -83,6 +83,7 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 # Alias's to change the directory
 alias web='cd /var/www/html'
 alias activate='source env/bin/activate'
+#alias exp='explorer.exe $1'  # For WSL: Open explorer in current directory
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -118,7 +119,7 @@ alias hlp='less ~/.bashrc_help'
 alias da='date "+%Y-%m-%d %A %T %Z"'
 
 # Alias's to modified commands
-alias cp='cp -i'
+#alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -iv'
 alias mkdir='mkdir -p'
@@ -219,11 +220,6 @@ alias logs="sudo find /var/log -type f -exec file {} \; | grep 'text' | cut -d' 
 # SHA1
 alias sha1='openssl sha1'
 
-# Git
-alias gpl='git pull'
-alias gps='git push'
-alias gstatus='git status'
-alias gdiff='git diff'
 
 #######################################################
 # SPECIAL FUNCTIONS
@@ -675,4 +671,4 @@ function __setprompt
 __setprompt
 
 # Start with Home Directory (Useful for WSL from windows terminal)
-cd
+#cd
