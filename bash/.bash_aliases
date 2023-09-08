@@ -10,6 +10,11 @@ alias gmaster='git checkout master'
 alias gmain='git checkout main'
 alias gprod='git checkout production'
 
+# Docker
+alias di='docker image'
+alias dc='docker container'
+alias dv='docker volume'
+alias dv='docker system'
 
 alias mysqlroot='mysql -h 127.0.0.1 -u root --password=root -P 3306'
 alias repos='cd ~/repos'
