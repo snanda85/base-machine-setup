@@ -619,7 +619,7 @@ function __setprompt
 
     # Date
     local DATE_FORMAT="+%d-%b-%y %I:%M:%S%P"
-    PS1+="\[${DARKGRAY}\][\[${LIGHTBLUE}\]\$(date '$DATE_FORMAT')\[${DARKGRAY}\]]" # Date
+    PS1+="\[${DARKGRAY}\][LOCAL \[${LIGHTBLUE}\]\$(date '$DATE_FORMAT')\[${DARKGRAY}\]]" # Date
 
     # CPU
     # PS1+="(\[${MAGENTA}\]CPU $(cpu)%"
@@ -651,7 +651,7 @@ function __setprompt
     # PS1+="\[${GREEN}\]\$(/bin/ls -A -1 | /usr/bin/wc -l)\[${DARKGRAY}\])"
 
     # Skip to the next line
-    # PS1+="\n"
+    PS1+="\n"
 
     if [[ $EUID -ne 0 ]]; then
         PS1+="\[${GREEN}\]$\[${NOCOLOR}\] " # Normal user
@@ -672,3 +672,5 @@ __setprompt
 
 # Start with Home Directory (Useful for WSL from windows terminal)
 #cd
+
+export SCREENDIR=$HOME/.screen
